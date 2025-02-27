@@ -60,3 +60,17 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (min-width: 922px){
+    .cta:hover{background-color: var(--yellow-hover);}
+    .mobile-el{display: none;}
+}
+@media (max-width: 921px) {
+    :root{--font-size: 14px;}
+    .cta:active{background-color: var(--yellow-hover);}
+}
+@media (max-width: 480px) {
+    :root{--font-size: 12px;}
+    .wrapper, .small-wrapper{width: 85%;}
+    .cta{font-size: 1.05rem;}
+}
