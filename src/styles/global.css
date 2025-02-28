@@ -3,8 +3,8 @@
     --vanilla: rgb(251, 246, 234);
     --oatmeal:#eae0d0;
     --charcoal: #1f1f1f;
-    /* --charcoal: #3b3834; */
-    --orange: #f58240;
+    --fruit-punch: #F25C54;
+    --navy-blue: #3E8E9E;
 }
 *{
     padding: 0;
@@ -20,6 +20,7 @@ html{
     scroll-behavior: smooth;
     color: var(--charcoal);
     background-color: var(--vanilla);
+    -webkit-font-smoothing: antialiased;
 }
 ul{list-style: none;}
 h1,h2,h3,h4{
@@ -29,6 +30,7 @@ h1,h2,h3,h4{
 }
 h2{
     font-size: 2.25rem;
+    letter-spacing: 1px;
     margin-bottom: 3.5rem;
 }
 a{
@@ -36,11 +38,12 @@ a{
     transition: all 0.2s ease-in-out;
 }
 p{line-height: 1.5;}
-section{padding: 5.5rem 0;}
+section{padding: 5rem 0;}
 button{
     cursor: pointer;
     transition: all 0.2s ease-in-out;
 }
+a:active, button:active{transform: scale(0.98);}
 a:focus, button:focus,
 form input:focus, form textarea:focus{
     outline: 1px dashed var(--charcoal);
@@ -55,9 +58,9 @@ textarea{
     max-width: 1400px;
 }
 .small-wrapper{
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1250px;
 }
 .bold{font-weight: 700;}
 .pics{
@@ -66,17 +69,45 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
+.cta{
+    padding: 17px 1.125rem;
+    color: var(--oatmeal);
+    font-family: "Oswald", sans-serif;
+    background-color: var(--fruit-punch);
+    text-align: center;
+    border-radius: 7px;
+    display: block;
+    width: auto;
+    max-width: 225px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
 
 @media screen and (min-width: 922px){
-    .cta:hover{background-color: var(--yellow-hover);}
+    .cta:hover{
+        box-shadow: rgba(242, 92, 84, 0.4) 5px 5px,  
+        rgba(242, 92, 84, 0.3) 10px 10px,  
+        rgba(242, 92, 84, 0.2) 15px 15px,  
+        rgba(242, 92, 84, 0.1) 20px 20px,  
+        rgba(242, 92, 84, 0.05) 25px 25px;
+    }
     .mobile-el{display: none;}
 }
 @media (max-width: 921px) {
     :root{--font-size: 14px;}
-    .cta:active{background-color: var(--yellow-hover);}
+    .cta:active{
+        box-shadow: rgba(242, 92, 84, 0.4) 5px 5px,  
+        rgba(242, 92, 84, 0.3) 10px 10px,  
+        rgba(242, 92, 84, 0.2) 15px 15px,  
+        rgba(242, 92, 84, 0.1) 20px 20px,  
+        rgba(242, 92, 84, 0.05) 25px 25px;
+    }
 }
 @media (max-width: 480px) {
     :root{--font-size: 12px;}
     .wrapper, .small-wrapper{width: 85%;}
-    .cta{font-size: 1.05rem;}
+    .cta{font-size: 1.08rem;}
 }
