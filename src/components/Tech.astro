@@ -1,16 +1,94 @@
+---
+import AstroImg from '../../public/favicon.svg';
+---
+
 <section>
     <div class="tech-container small-wrapper">
         <h2>TECHNOLOGIES</h2>
+        <h3>Software and tech stack I work with but also exploring and learning new tools or frameworks as needed.</h3>
+
+        <div class="card-container">
+
+            <div class="card">
+                <p>HTML</p>
+            </div>
+            <div class="card">
+                <p>CSS</p>
+            </div>
+            <div class="card">
+                <p>Javascript</p>
+            </div>
+            <div class="card">
+                <p>jQuery</p>
+            </div>
+            <div class="card">
+                <p>Node JS</p>
+            </div>
+            <div class="card">
+                <p>Astro JS</p>
+            </div>
+            <div class="card">
+                <p>Vue JS</p>
+            </div>
+            <div class="card">
+                <p>Figma</p>
+            </div>
+            <div class="card">
+                <p>Adobe XD</p>
+            </div>
+            <div class="card">
+                <p>Wix Studio</p>
+            </div>
+            <div class="card">
+                <p>Adobe Illustrator</p>
+            </div>
+            <div class="card">
+                <p>Adobe Photoshop</p>
+            </div>
+            <div class="card">
+                <p>Affinity Designer</p>
+            </div>
+            <div class="card">
+                <p>Affinity Photo</p>
+            </div>
+            <div class="card">
+                <p>Jira</p>
+            </div>
+            <div class="card">
+                <p>Slack</p>
+            </div>
+            <div class="card">
+                <p>Screaming Frog</p>
+            </div>
+
+        </div>
     </div>
 </section>
 
 <style>
     section{
-        /* background: linear-gradient(to right,  
-        rgb(251, 246, 234) 2%,  
-        #F25C54 50%,  
-        rgb(251, 246, 234) 98%); */
         background-color: var(--oatmeal);
     }
-    .tech-container h2{text-align: center;}
+    .tech-container h2{
+        text-align: center;
+        margin-bottom: 0.85rem;
+    }
+    .tech-container h3{
+        margin-bottom: 3.5rem;
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .tech-container .card-container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.75rem 1.125rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-container .card{
+        padding: 10px 1.25rem;
+        background-color: var(--charcoal);
+        color: var(--vanilla);
+        border-radius: 8px;
+    }
 </style>
