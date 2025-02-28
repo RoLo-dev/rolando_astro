@@ -13,15 +13,20 @@
 }
 html{
     font-size: var(--font-size);
-    /* font-family: "Epilogue", serif;
+    font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
-    font-style: normal;*/
+    font-style: normal;
     overflow-y: scroll;
     scroll-behavior: smooth;
     color: var(--charcoal);
     background-color: var(--vanilla);
 }
 ul{list-style: none;}
+h1,h2,h3,h4{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 h2{
     font-size: 2.25rem;
     margin-bottom: 3.5rem;
@@ -42,7 +47,7 @@ form input:focus, form textarea:focus{
 }
 button, form, input,
 textarea{
-    /* font-family: "Epilogue", serif; */
+    font-family: "Quicksand", sans-serif;
 }
 .wrapper{
     width: 78%;
