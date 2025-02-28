@@ -1,10 +1,10 @@
 :root{
     --font-size: 16px;
-    --vanilla: rgb(253, 249, 236);
-    /* --vanilla: #f2ede1; */
+    --vanilla: rgb(251, 246, 234);
     --oatmeal:#eae0d0;
     --off-white: #F0EFEA;
     --charcoal: #3b3834;
+    --orange: #F99052;
 }
 *{
     padding: 0;
