@@ -1,26 +1,35 @@
+---
+import headerLogo from '../assets/images/RL_logo2018.svg';
+---
+
+
 <header id="header">
     <div class="header-container wrapper">
         <div class="left-col">
             <a href="#" class="logo" title="logo" aria-label="Logo">
-                <img src="https://rolandolopantzi.com/imgs/RL_logo2018.svg" alt="RL logo" class="pics">
+                <img src={headerLogo.src} alt="RL logo" class="pics">
             </a>
 
             <nav class="header-nav">
                 <ul>
                     <li>
-                        <a href="">WEB</a>
+                        <a href="" title="Web" aria-label="Web section link">WEB</a>
                     </li>
                     <li>
-                        <a href="">GRAPHICS</a>
+                        <a href="" title="Graphics" aria-label="Graphics section link">GRAPHICS</a>
                     </li>
                     <li>
-                        <a href="">ABOUT</a>
+                        <a href="" title="About" aria-label="About section link">ABOUT</a>
                     </li>
                     <li>
-                        <a href="">CONTACT</a>
+                        <a href="" title="Contact" aria-label="Contact section link">CONTACT</a>
                     </li>
                 </ul>
             </nav>
+
+            <div class="header-social-icons">
+                <a href=""></a>
+            </div>
 
             <button class="mobile-el hamburger-btn">
                 <span class="hamburger-icon"></span>
