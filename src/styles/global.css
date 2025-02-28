@@ -2,7 +2,6 @@
     --font-size: 16px;
     --vanilla: rgb(251, 246, 234);
     --oatmeal:#eae0d0;
-    --off-white: #F0EFEA;
     --charcoal: #1f1f1f;
     /* --charcoal: #3b3834; */
     --orange: #f58240;
@@ -53,7 +52,7 @@ textarea{
 .wrapper{
     width: 78%;
     margin: 0 auto;
-    max-width: 1600px;
+    max-width: 1400px;
 }
 .small-wrapper{
     width: 70%;
