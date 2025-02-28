@@ -3,8 +3,9 @@
     --vanilla: rgb(251, 246, 234);
     --oatmeal:#eae0d0;
     --off-white: #F0EFEA;
-    --charcoal: #3b3834;
-    --orange: #F99052;
+    --charcoal: #1f1f1f;
+    /* --charcoal: #3b3834; */
+    --orange: #f58240;
 }
 *{
     padding: 0;
