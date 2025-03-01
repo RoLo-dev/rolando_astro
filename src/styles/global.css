@@ -1,6 +1,7 @@
 :root{
     --font-size: 16px;
-    --vanilla: rgb(251, 246, 234);
+    --vanilla: rgb(247 245 241);
+    /* --vanilla: rgb(251, 246, 234); */
     --oatmeal:#eae0d0;
     --charcoal: #1f1f1f;
     --fruit-punch: #F25C54;
