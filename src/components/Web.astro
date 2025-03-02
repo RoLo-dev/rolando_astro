@@ -4,25 +4,64 @@
 
         <div class="web-card-container">
             <div class="web-card">
-                <div class="col large-col web-one-a"></div>
-                <div class="col small-col web-one-b"></div>
+                <div class="img-container">
+                    <div class="col large-col web-one-a"></div>
+                    <div class="col small-col web-one-b"></div>
+                </div>
+                <div class="site-info">
+                    <h3>Bani Bakery</h3>
+                    <ul>
+                        <li>Web Design</li>
+                        <li>Web Development</li>
+                        <li>Copywriting</li>
+                        <li>Graphic Design</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
 <style>
-    .web-card{
+    .web-card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem 0;
+    }
+    .web-card .img-container{
         display: flex;
         gap: 1.5rem;
         align-items: flex-end;
-        height: 450px;
+        height: 525px;
+        padding: 2.5rem 2.5rem 0 2.5rem;
+        border-radius: 15px;
+        background-color: var(--fruit-punch);
+        margin-bottom: 1.5rem;
     }
-    .web-card .col{
+    .web-card .img-container .col{
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top center;
         background-size: cover;
+        height: 100%;
+        border-radius: 13px 13px 0 0;
     }
-    .web-card .large-col{width: 70%;}
-    .web-card .small-col{width: 32%;}
+    .site-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .site-info h3{font-size: 1.5rem;}
+    .site-info ul{
+        display: flex;
+        gap: 0 1rem;
+    }
+    .site-info ul li{
+        padding: 10px 1rem;
+        border-radius: 5px;
+        background-color: var(--oatmeal);
+    }
+    .web-card .img-container .large-col{width: 70%;}
+    .web-card .img-container .small-col{width: 32%;}
+    .web-one-a{background-image: url('../assets/images/hero-one-shot.png');}
+    .web-one-b{background-image: url('../assets/images/banibakery_site.png');}
 </style>
