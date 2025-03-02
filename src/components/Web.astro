@@ -3,8 +3,9 @@
         <h2>Websites</h2>
 
         <div class="web-card-container">
+
             <div class="web-card">
-                <div class="img-container">
+                <div class="img-container color-one">
                     <div class="col large-col web-one-a"></div>
                     <div class="col small-col web-one-b"></div>
                 </div>
@@ -18,6 +19,35 @@
                     </ul>
                 </div>
             </div>
+            <div class="web-card">
+                <div class="img-container color-four">
+                    <div class="col large-col web-three-a"></div>
+                    <div class="col small-col web-three-b"></div>
+                </div>
+                <div class="site-info">
+                    <h3>Omnifood</h3>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>Graphic Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="web-card">
+                <div class="img-container color-three">
+                    <div class="col large-col web-two-a"></div>
+                    <div class="col small-col web-two-b"></div>
+                </div>
+                <div class="site-info">
+                    <h3>Technaprint</h3>
+                    <ul>
+                        <li>Web Design</li>
+                        <li>Web Development</li>
+                        <li>Copywriting</li>
+                        <li>Graphic Design</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -26,18 +56,21 @@
     .web-card-container{
         display: flex;
         flex-direction: column;
-        gap: 2rem 0;
+        gap: 2.5rem 0;
     }
     .web-card .img-container{
         display: flex;
         gap: 1.5rem;
         align-items: flex-end;
-        height: 525px;
+        height: 575px;
         padding: 2.5rem 2.5rem 0 2.5rem;
         border-radius: 15px;
-        background-color: var(--fruit-punch);
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.125rem;
     }
+    .web-card .color-one{background-color: var(--fruit-punch);}
+    .web-card .color-two{background-color: var(--charcoal);}
+    .web-card .color-three{background-color: var(--oatmeal);}
+    .web-card .color-four{background-color: var(--blue);}
     .web-card .img-container .col{
         background-repeat: no-repeat;
         background-position: top center;
@@ -64,4 +97,8 @@
     .web-card .img-container .small-col{width: 32%;}
     .web-one-a{background-image: url('../assets/images/hero-one-shot.png');}
     .web-one-b{background-image: url('../assets/images/banibakery_site.png');}
+    .web-two-a{background-image: url('../assets/images/techna-hero.png');}
+    .web-two-b{background-image: url('../assets/images/technaprint_site.png');}
+    .web-three-a{background-image: url('../assets/images/omni_hero.png');}
+    .web-three-b{background-image: url('../assets/images/omni_site.webp');}
 </style>
