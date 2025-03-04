@@ -1,10 +1,20 @@
+---
+import Selfie from '../assets/images/rolando_avatar_blk.png';
+---
+
 <section>
     <div class="about-container small-wrapper">
-        <h2>ABOUT</h2>
 
         <div class="text-col">
-            <p>My name is Rolando Lopantzi, my goal is to elevate companies like yours through the power of design. I am here to help you effectively convey your message and make a positive impact. Let's work together and bring your vision to life!
-            </p>
+            <div>
+                <h2>ABOUT</h2>
+                <p>My name is Rolando Lopantzi, I'm a design partner you can trust and won't let you down. You can rely on me to communicate regularly, deliver on time, and provide real value to your business. My goal is to elevate companies like yours through the power of design. I am here to help you effectively convey your message and make a positive impact. Let's work together and bring your vision to life!</p>
+            </div>
+        </div>
+        <div class="img-col">
+            <figure>
+                <img src={Selfie.src} alt="Rolando avatar" class="pics">
+            </figure>
         </div>
 
     </div>
@@ -12,7 +22,28 @@
 
 <style>
     section{
-        background-color: var(--charcoal);
-        color: var(--oatmeal);
+        background-color: var(--oatmeal);
+        /* color: var(--oatmeal); */
+    }
+    .about-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .text-col{
+        width: calc(100% - 350px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-col{width: 300px;}
+    .img-col figure img{
+        border-radius: 100px 25px 100px 25px;
+        border: 1px solid var(--fruit-punch);
+        box-shadow: rgba(242, 92, 84, 0.4) 5px 5px,  
+        rgba(242, 92, 84, 0.3) 10px 10px,  
+        rgba(242, 92, 84, 0.2) 15px 15px,  
+        rgba(242, 92, 84, 0.1) 20px 20px,  
+        rgba(242, 92, 84, 0.05) 25px 25px;
     }
 </style>
