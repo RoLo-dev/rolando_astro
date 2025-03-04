@@ -3,6 +3,13 @@
         <h2>Get in Touch</h2>
         <h3>Have any inquiries? Drop a message, let's chat about how I can help.</h3>
 
+
+        <form action="">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" name="email" placeholder="Email">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" class="cta">SUBMIT</button>
+        </form>
     </div>
 </section>
 
@@ -19,5 +26,45 @@
         margin-bottom: 3.5rem;
         text-align: center;
         font-size: 1.25rem;
+    }
+    .contact-container form{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem 0;
+    }
+    form input{
+        height: 50px;
+        padding: 3px 8px;
+    }
+    form textarea{
+        height: 175px;
+        padding: 5px 8px;
+    }
+    form input, form textarea{
+        background-color: var(--oatmeal);
+        border-radius: 7px;
+        border: 0;
+        color: var(--charcoal);
+        font-size: 1.05rem;
+    }
+    form input:active, form input:focus,
+    form textarea:active, form textarea:focus{
+        background-color: var(--vanilla);
+        color: var(--charcoal);
+        border: 1px solid var(--fruit-punch);
+    }
+    form input::placeholder,
+    form textarea::placeholder{
+        font-size: 1.125rem;
+        color: #6c6c6c;
+        font-weight: 500;
+    }
+
+
+    @media screen and (min-width: 922px){
+        .contact-container form{
+            max-width: 450px;
+        }
     }
 </style>
