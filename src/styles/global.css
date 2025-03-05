@@ -101,7 +101,7 @@ textarea{
         rgba(242, 92, 84, 0.05) 25px 25px;
     }
 }
-@media (max-width: 921px) {
+@media screen and (max-width: 921px) {
     :root{--font-size: 14px;}
     .cta:active{
         box-shadow: rgba(242, 92, 84, 0.4) 5px 5px,  
@@ -111,8 +111,8 @@ textarea{
         rgba(242, 92, 84, 0.05) 25px 25px;
     }
 }
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
     :root{--font-size: 12px;}
     .wrapper, .small-wrapper{width: 85%;}
-    .cta{font-size: 1.08rem;}
+    .cta{font-size: 1.25rem;}
 }
