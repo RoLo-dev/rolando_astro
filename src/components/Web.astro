@@ -117,4 +117,38 @@
     .web-three-b{background-image: url('../assets/images/omni_site.webp');}
     .web-four-a{background-image: url('../assets/images/bznz_hero.webp');}
     .web-four-b{background-image: url('../assets/images/bznz_site.webp');}
+
+    @media screen and (max-width: 1226px){
+        .web-card .img-container{
+            height: 450px;
+            padding: 1.75rem 1.75rem 0 1.75rem;
+        }
+    }
+    @media screen and (max-width: 1095px){
+        .site-info{
+            flex-wrap: wrap;
+            gap: 0.5rem 0;
+        }
+        .site-info h3{width: 100%;}
+    }
+    @media screen and (max-width: 922px){
+        .web-card .img-container{height: 300px;}
+        .web-container h2{text-align: center;}
+    }
+    @media screen and (max-width: 825px){
+        .web-card .img-container .small-col{display: none;}
+        .web-card .img-container .large-col{width: 100%;}
+        .site-info{display: none;}
+        .web-card .img-container{
+            margin-bottom: 0;
+            border-radius: 10px;
+        }
+        .web-card-container{gap: 1rem 0;}
+    }
+    @media screen and (max-width: 480px){
+        .web-card .img-container{height: 275px;}
+        .web-card .img-container .col{
+            border-radius: 7px 7px 0 0;
+        }
+    }
 </style>
