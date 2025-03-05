@@ -14,7 +14,7 @@
 </section>
 
 <style>
-    section{margin-top: 5rem;}
+    section{margin-top: 4rem;}
     .hero-container{
         display: flex;
         justify-content: space-between;
@@ -28,29 +28,15 @@
     }
     .text-col h1{
         font-size: 3.125rem;
-        /* font-size: 3.5rem; */
         margin-bottom: 8px;
         text-transform: uppercase;
         line-height: 1.2;
     }
-    /* .text-col h2{
-        text-transform: initial;
-        font-size: 1.65rem;
-        line-height: 1.4;
-        letter-spacing: 0;
-        font-weight: 400;
-        margin-bottom: 3rem;
-    } */
     .text-col p{
         font-size: 1.35rem;
         line-height: 1.4;
         margin: 3rem 0;
     }
-    /* .text-col p{ 
-        font-size: 1.125rem;
-        line-height: 1.65;
-        margin-bottom: 3rem;
-    } */
     .hero-container .img-col{
         width: 38%;
         height: 600px;
@@ -66,5 +52,44 @@
         rgba(242, 92, 84, 0.2) 15px 15px,  
         rgba(242, 92, 84, 0.1) 20px 20px,  
         rgba(242, 92, 84, 0.05) 25px 25px;
+    }
+
+    @media screen and (max-width: 1300px){
+        .hero-container .text-col{
+            width: 53%;
+            padding-right: 4rem;
+        }
+        .hero-container .img-col{width: 45%;}
+    }
+    @media screen and (max-width: 1095px){
+        .hero-container{
+            flex-direction: column;
+            gap: 3.5rem 0;
+        }
+        .hero-container .text-col{
+            width: 100%;
+            padding-right: 0;
+            order: 2;
+        }
+        .hero-container .img-col{
+            order: 1;
+            height: 350px;
+            width: 350px;
+            border-radius: 250px;
+            margin: 0 auto;
+        }
+        .text-col h1, .text-col p{text-align: center;}
+        .text-col .cta{margin-left: auto;margin-right: auto;}
+    }
+    @media screen and (max-width: 480px){
+        .hero-container .img-col{
+            width: 225px;
+            height: 225px;
+            box-shadow: rgba(242, 92, 84, 0.4) 2px 2px,  
+            rgba(242, 92, 84, 0.3) 7px 7px,  
+            rgba(242, 92, 84, 0.2) 12px 12px,  
+            rgba(242, 92, 84, 0.1) 17px 17px,  
+            rgba(242, 92, 84, 0.05) 22px 22px;
+        }
     }
 </style>

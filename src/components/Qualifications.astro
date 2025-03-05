@@ -64,4 +64,26 @@
         padding-top: 7px;
         font-size: 0.5rem;
     }
+    @media screen and (max-width: 1126px){
+        .qualities-container .img-col{
+            width: 35%;
+            height: 350px;
+            border-radius: 150px;
+        }
+        .qualities-container .text-col{width: 57%;}
+    }
+    @media screen and (max-width: 922px){
+        .qualities-container{
+            gap: 3.5rem 0;
+            flex-direction: column;
+        }
+        .qualities-container .img-col{
+            height: 275px;
+            width: 275px;
+            order: 2;
+            margin: 0 auto;
+        }
+        .qualities-container .text-col{width: 100%;}
+        .text-col h2{text-align: center;}
+    }
 </style>
