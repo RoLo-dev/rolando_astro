@@ -100,7 +100,6 @@ textarea{
         rgba(242, 92, 84, 0.1) 20px 20px,  
         rgba(242, 92, 84, 0.05) 25px 25px;
     }
-    .mobile-el{display: none;}
 }
 @media (max-width: 921px) {
     :root{--font-size: 14px;}
