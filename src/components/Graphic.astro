@@ -13,6 +13,7 @@ import Img11 from '../assets/images/img11.webp'
 import Img12 from '../assets/images/img12.webp'
 import Img13 from '../assets/images/img13.webp'
 import Img14 from '../assets/images/img14.webp'
+import Img15 from '../assets/images/img15.webp'
 ---
 
 <section id="graphics" data-aos="fade-up" data-aos-delay="800">
@@ -33,7 +34,7 @@ import Img14 from '../assets/images/img14.webp'
                 <img loading="lazy" class="pics" src={Img4.src} alt="artwork image">
             </figure>
             <figure>
-                <img loading="lazy" class="pics" src={Img5.src} alt="artwork image">
+                <img loading="lazy" class="pics img-position" src={Img5.src} alt="artwork image">
             </figure>
             <figure>
                 <img loading="lazy" class="pics" src={Img6.src} alt="artwork image">
@@ -61,6 +62,9 @@ import Img14 from '../assets/images/img14.webp'
             </figure>
             <figure>
                 <img loading="lazy" class="pics" src={Img14.src} alt="artwork image">
+            </figure>
+            <figure>
+                <img loading="lazy" class="pics img-position" src={Img15.src} alt="artwork image">
             </figure>
         </div>
     </div>
@@ -91,8 +95,12 @@ import Img14 from '../assets/images/img14.webp'
 	figure img{
 		transition: all 0.2s ease-in-out;
 	}
+	.img-position{
+		object-position: top;
+	}
 	figure img:hover {
-		transform: scale(1.1);
+		transform: scale(0.97);
+		object-fit: contain;
 	}
     .lightbox{
 		display: none;
